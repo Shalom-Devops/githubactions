@@ -1,13 +1,8 @@
 name: hello-world
 on: push
 jobs:
-  my-job:
-    runs-on: ubuntu-latest
-    steps:
-      - name: my-step
-        run: echo "Welcome World!"
-        uses:
   Build:
+    runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
       - name: Set up JDK 11
